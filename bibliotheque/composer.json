@@ -1,0 +1,19 @@
+{
+    "name": "Jimmy/cours5",
+    "description": "Test2",
+    "autoload":{
+        "psr-4":{
+            "Models\\":"models/",
+            "Controllers\\":"controllers/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jimmy Havenith",
+            "email": "jimhave@outlook.com"
+        }
+    ],
+    "require": {
+        "illuminate/container":"5.0.x-dev"
+    }
+}

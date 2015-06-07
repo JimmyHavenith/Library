@@ -1,0 +1,661 @@
+/**** RESET ***/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	line-height: 1;
+}
+ol, ul{
+	list-style-type: none;
+}
+blockquote, q{
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	font-size: 16px;
+	/*font-family: 'Aileron';*/
+	font-family: "Lato",sans-serif;
+	background-color: #b1b6ba;
+	width: 1580px;
+}
+
+/*HEADER */
+#header{
+	background-color: black;
+	margin-bottom: px;
+}
+#headerTop{
+	background-color: black;
+	padding: 19px;
+	padding-left: 320px;
+	padding-right: 320px;
+	height: 32px;
+}
+#headerDown{
+	background-image: url("../img/livre.jpg");
+	background-repeat: no-repeat;
+	padding-top: 96px;
+	height: 184px;
+}
+.connexion{
+	display: inline-block;
+}
+.connexion li{
+	padding-bottom: 4px;
+}
+.connexion li a{
+	color: #194584;
+	text-decoration: none;
+	font-weight: 300;
+}
+.connexion li a:hover{
+	text-decoration: underline;
+}
+.searchTop{
+	float: right;
+}
+.searchBar{
+	border-radius: 4px;
+	border: none;
+	width: 240px;
+	height: 32px;
+}
+.envoyer{
+	border-radius: 4px;
+	border: none;
+	color: black;
+	font-weight: bold;
+	background-color: #af5417;
+	height: 35px;
+	cursor: pointer;
+}
+#header h1 a{
+	font-size: 40px;
+	text-decoration: none;
+	color: #af5417;
+	font-weight: bold;
+}
+#header h1{
+	text-align: center;
+	margin-bottom: 8px;
+	margin-top: 16p; 
+}
+#header h1 a{
+	/*font-family: 'Actual';*/
+	font-family: 'Nueva Std';
+}
+#header h1 a span.sWord{
+	color: #194584;
+}
+/*MENU*/
+.menu{
+	margin-left: 320px;
+	margin-top: 101px;
+/*	background-color: black;
+	border-radius: 10px;
+	margin-right: 950px;*/
+}
+.menu li{
+	display: inline-block;
+	padding-right: 16px;
+	/*margin-bottom: 1em; */
+	background-color:  black;
+	border-radius: 8px 8px 0 0;
+	padding: 7px;
+
+}
+.menu li a{
+	color: #af5417;
+	text-decoration: none;
+	font-size: 19px;
+}
+.menu li a:hover{
+	color: #194584;
+	text-decoration: overline;
+}
+.menu li a.page-active{
+	color: #194584;
+	text-decoration: overline;
+}
+hr{
+	margin: 0 auto;
+	color: black;
+	height: 10px;
+	border: 1px solid black;
+	background-color: black;
+/*	margin-left: 20em;
+	margin-right: 20em;*/
+}
+/*CONTENT*/
+#content{
+	background-color: white;
+	padding: 24px;
+	padding-top: 72px;
+	margin-left: 320px;
+	margin-right: 320px;
+}
+.news h2, .searchMain h2{
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+}
+.news h3, .searchMain h3{
+	color: #af5417;
+	font-size: 17px;
+	margin-top: 4px;
+}
+.searchBarBot{
+	border-radius: 4px;
+	border: none;
+	border: 3px solid #af5417;
+	margin-top: 80px;
+	width: 400px;
+	height: 40px;
+	margin-left: 240px;
+	font-size: 1.5em;
+	text-align: center;
+}
+.envoyerBot{
+	display: block;
+	border-radius: 4px;
+	border: none;
+	background-color: #af5417;
+	border: 3px solid #af5417;
+	margin-top: 10px;
+	width: 408px;
+	height: 40px;
+	margin-left: 240px;
+	margin-bottom: 80px;
+	color: white;
+	font-size: 1.8em;
+	cursor: pointer;
+	font-weight: bold;
+}
+.livresNouveaux{
+	margin-top: 32px;
+	margin-bottom: 56px;
+}
+.livresNouveaux li{
+	display: inline-block;
+	padding-left: 12px;
+}
+.livresNouveaux li a img{
+	width: 160px;
+	height: 224px;
+}
+.livresNouveaux li a img:hover{
+	transition: 0.4s linear;
+	transform: scale(1.1);
+}
+
+/*FOOTER*/
+#footer{
+	background-color: black;
+	height: 105px;
+	margin-left: 320px;
+	margin-right: 320px;
+}
+#footer p{
+	color: #af5417;
+	text-align: center;
+	padding-top: 40px;
+}
+#footer p a{
+	color: #194584;
+	text-decoration: none;
+}
+
+/*CONNEXION*/
+
+#pageConnexion{
+	content: "";
+	display: table;
+	width: 100%;
+}
+#pageConnexion h1{
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin-bottom: 50px;
+	margin-left: 40px;
+}
+#phrase h2{
+	color: #af5417;
+	font-weight: bold;
+	text-align: left;
+	border-top: 1px solid #f8c8b8;
+	border-bottom: 1px solid #f8c8b8;
+	padding: 10px 35px;
+
+}
+#connect{
+/*	margin-left: 100px;*/
+	width: 91%;
+	margin: 5 auto 25px
+}
+#connect form.connectProfil{
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+#connect form.connectProfil input[type="text"]{
+	display: block;
+	margin-top: 10px;
+	width: 50%;
+	height: 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid grey;
+	padding-left: 5px;
+/*	text-transform: uppercase;*/
+	font-weight: bold;
+	color: #3A3938;
+}
+#connect form.connectProfil input[type="password"]{
+	display: block;
+	margin-top: 10px;
+	width: 50%;
+	height: 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid grey;
+	padding-left: 5px;
+/*	text-transform: uppercase;*/
+	font-weight: bold;
+	color: #3A3938;
+}
+#connect form.connectProfil input.mdp{
+	margin-top: 10px;
+}
+#connect p a{
+	color: #194584;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-left: 260px;
+}
+#valider{
+	background-color:  #2daa4a;
+	padding: 8px 45px;
+	font-size: 1.2em;
+	color: white;
+	text-transform: uppercase;
+	margin-left: 115px;
+	margin-top: 20px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+#createAccount{
+	position: absolute;
+	right: 425px;
+	bottom: 85px;	
+	float: left;
+    padding-top: 0;
+    text-align: left;
+    width: 230px;
+    padding-left: 85px;
+    border-left: 1px solid #cacad9;
+}
+#createAccount h3{
+	color: #3d3d3d;
+	margin-bottom: 10px;
+}
+#createAccount p{
+	color: #969595;
+	font-size: 0.8em;
+	text-align: justify;
+}
+#createAccount li{
+	display: inline-block;
+	margin-top: 35px;
+	margin-left: 5px;
+}
+#createAccount li a{
+	color: white;
+	background-color: #194584;
+	padding: 13px 40px;
+	border-radius: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	font-size: 1.2em;
+}
+#phraseCreate h2{
+	padding: 0 35px;
+}
+
+/*FICHE LIVRE*/
+#fiche{
+	width: 100%;
+}
+#fiche h1{
+	text-align: center;
+	position: center;
+	font-size: 2.5em;
+	font-weight: 300;
+	color: #af5417;
+}
+#fiche h2{
+	text-align: center;
+	position: center;
+	font-size: 1.3em;
+	margin-top: 15px;
+}
+#fiche h2 a{
+	color: black;
+}
+#fiche h2 a:hover{
+	text-decoration: none;
+}
+#fiche img{
+	margin: 50px;
+	margin-left: 290px;
+	width: 35%;
+}
+#fiche table{
+	margin-left: 140px;
+	width: 70%;
+	text-align: center;
+}
+#fiche table th{
+	background-color: #af5417;
+	border: 1px solid black;
+	padding: 4px;
+}
+#fiche table td{
+	padding: 4px; 
+	padding-top: 20px;
+}
+#fiche table td a{
+	color: black;
+	font-weight: bold;
+}
+#fiche table td a:hover{
+	text-decoration: none;
+}
+#fiche p.description{
+	text-align: justify;
+	width: 70%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 140px;
+}
+#pageUser li{
+	display: inline-block;
+	margin-left: 139px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+#pageUser li a.del{
+	color: white;
+	background-color: #e62117;
+	padding: 5px;
+	border-radius: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#pageUser li a.add{
+	color: white;
+	background-color: #2daa4a;
+	padding: 5px;
+	border-radius: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#pageUser a.watch{
+	color: white;
+	background-color: #194584;
+	padding: 5px;
+	border-radius: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 252px;
+}
+
+/*PAGE CREATE*/
+
+#pageCreate{
+	content: "";
+	display: table;
+	width: 100%;
+}
+#pageCreate h1{
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin-bottom: 50px;
+	margin-left: 40px;
+}
+#phraseCreate{
+	color: #af5417;
+	font-weight: bold;
+	text-align: left;
+	border-top: 1px solid #f8c8b8;
+	border-bottom: 1px solid #f8c8b8;
+	padding: 10px 0;
+}
+#create{
+	width: 91%;
+	margin: 5 auto 25px
+}
+#create form.createProfil{
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+#create form.createProfil input[type="submit"]{
+	background-color:  #194584;
+	padding: 8px 45px;
+	font-size: 1.2em;
+	color: white;
+	text-transform: uppercase;
+	margin-left: 115px;
+	margin-top: 20px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}#create form.createProfil input[type="text"]{
+	display: block;
+	margin-top: 10px;
+	width: 50%;
+	height: 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid grey;
+	padding-left: 5px;
+/*	text-transform: uppercase;*/
+	font-weight: bold;
+	color: #3A3938;
+}
+#create form.createProfil input[type="password"]{
+	display: block;
+	margin-top: 10px;
+	width: 50%;
+	height: 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid grey;
+	padding-left: 5px;
+/*	text-transform: uppercase;*/
+	font-weight: bold;
+	color: #3A3938;
+}
+
+/*PAGE FAVORIS */
+
+#favoris h1{
+	font-size: 2em;
+	color: black;
+}
+
+#favoris img{
+	width: 20%;
+	margin-top: 50px;
+	margin-left: 30px;
+	margin-bottom: 50px;
+}
+#favoris img:hover{
+	transition: 0.2s ease-in;
+	transform: scale(1.1);
+}
+#favoris {
+
+}
+/*PAGE ADMIN */
+
+#pageAdmin h1{
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin-bottom: 50px;
+	margin-left: 40px;	
+}
+#pageAdmin h2{
+	color: #af5417;
+	font-weight: bold;
+	text-align: left;
+	border-top: 1px solid #f8c8b8;
+	border-bottom: 1px solid #f8c8b8;
+	padding: 10px 35px;
+}
+#pageAdmin .formulaire{
+	margin-top: 50px;
+	width: 40%;
+	margin-left: 250px;
+	margin-bottom: 50px;
+}
+#pageAdmin .formulaire input[type="text"] {
+	width: 370px;
+	height: 30px;
+	margin-bottom: 25px;
+}
+#pageAdmin .formulaire select{
+	width: 375px;
+	margin-bottom: 25px;
+}
+#pageAdmin .formulaire input[type="file"] {
+	width: 375px;
+	margin-bottom: 25px;
+}
+#pageAdmin .formulaire textarea{
+	width: 375px;
+	height: 75px;
+}
+#pageAdmin .formulaire input[type="submit"] {
+	width: 150px;
+	background-color: #2daa4a;
+	border: none;
+	height: 30px;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-left: 230px;
+}
+#pageAdmin ul.ancre{
+	margin-left: 40px;
+	margin-bottom: 60px;
+}
+#pageAdmin li{
+	list-style-type: disc;
+	margin-top: 5px;
+}
+#pageAdmin li a{
+	color: #af5417;
+}
+#pageAdmin li a:hover{
+	text-decoration: none;
+}
+#authors a, #editors a, #libraries a{
+	display: block;
+	margin-bottom: 25px;
+}
+#supprimerAuteur, #supprimerEditor, #supprimerLibrary, #supprimerBook {
+	border: none;
+	color: white;
+	background-color: #e62117;
+	padding: 5px;
+	border-radius: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 140px;
+	cursor: pointer;
+}
+#modifyBook{
+	border: none;
+	color: white;
+	background-color: #194584;
+	padding: 5px 23px 5px 5px;
+	border-radius: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 2px;
+}
+.imgCourante{
+	width: 30%;
+	margin-bottom: 30px;
+}
+
+/*SEARCH */
+
+.searchBook img{
+	width: 20%;
+}
+#bookSearch li.searchBook{
+	list-style-type: none;
+	display: block;
+	margin-bottom: 40px;
+	margin-left: 50px;
+}
+#bookSearch h2{
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+#bookSearch p a{
+	color: black;
+	font-weight: bold;
+	font-size: 1.5em;
+	float: right;
+	bottom: 50px;
+}
